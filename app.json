@@ -1,7 +1,7 @@
 {
   "name": "Uploader Bot V4 🚀",
   "description": "Telegram's best Open Source Url Uploader Bot. Create your Fork now.",
-  "logo": "",
+  "logo": "https://te.legra.ph/file/82c925ccc38606d837831.jpg",
   "keywords": [
     "telegram",
     "best",
@@ -13,8 +13,8 @@
     "remote",
     "uploader"
   ],
-  "website": "",
-  "repository": "https://github.com/krishd9895/UPLOADER-BOT-V4",
+  "website": "https://www.google.com",
+  "repository": "https://github.com/LISA-KOREA/UPLOADER-BOT-V4",
   "env": {
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
@@ -67,4 +67,3 @@
     }
   }
 }
-
