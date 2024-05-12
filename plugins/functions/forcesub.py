@@ -15,7 +15,7 @@ async def handle_force_subscribe(bot, message):
         if user.status == "kicked":
             await bot.send_message(
                 chat_id=message.from_user.id,
-                text="Sorry Sir, You are Banned. Contact My [Support Group](https://t.me/NT_BOTS_SUPPORT).",
+                text="Sorry Sir, You are Banned.",
                 parse_mode=enums.ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_to_message_id=message.id,
@@ -24,7 +24,7 @@ async def handle_force_subscribe(bot, message):
     except UserNotParticipant:
         await bot.send_message(
             chat_id=message.from_user.id,
-            text="Pʟᴇᴀsᴇ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ Tᴏ Usᴇ Mᴇ!\n\nDᴜᴇ ᴛᴏ Oᴠᴇʀʟᴏᴀᴅ, Oɴʟʏ Cʜᴀɴɴᴇʟ Sᴜʙsᴄʀɪʙᴇʀs Cᴀɴ Usᴇ Mᴇ!",
+            text="Pʟᴇᴀsᴇ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -39,7 +39,7 @@ async def handle_force_subscribe(bot, message):
     except Exception:
         await bot.send_message(
             chat_id=message.from_user.id,
-            text="Something Went Wrong. Contact My [Support Group](https://t.me/NT_BOTS_SUPPORT).",
+            text="Something Went Wrong.",
             parse_mode=enums.ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_to_message_id=message.id,
