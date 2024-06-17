@@ -1,7 +1,10 @@
-
 import logging
+
+# Custom log format to include "Logging Module" before each message
+log_format = '%(asctime)s - %(name)s - %(levelname)s - Logging Module - %(message)s'
+
 logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+                    format=log_format)
 logger = logging.getLogger(__name__)
 
 import os
