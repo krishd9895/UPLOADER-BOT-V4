@@ -44,5 +44,6 @@ def DownLoadFile(url, file_name, chunk_size, client, ud_type, message_id, chat_i
                             )
                         )
                     except:
-                        pass
-    return file_name
+                        print("Client not provided or an error occurred while editing the message.")
+            else:
+                print("Client not provided, skipping message update.")
